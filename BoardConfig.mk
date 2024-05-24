@@ -130,7 +130,6 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
 # Power
 TARGET_RPM_MASTER_STAT := "/sys/kernel/debug/rpm_master_stats"
 TARGET_WLAN_POWER_STAT := "/sys/kernel/debug/wlan0/power_stats"
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/tap2wake"
 
 # Recovery
 BOOTLOADER_MESSAGE_OFFSET := 128
@@ -146,6 +145,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
 include hardware/lge/sepolicy/SEPolicy.mk
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
