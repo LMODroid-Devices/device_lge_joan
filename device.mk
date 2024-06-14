@@ -53,7 +53,7 @@ PRODUCT_PACKAGES += \
     audio.primary.msm8998 \
     audio.r_submix.default \
     audio.usb.default \
-    audio_amplifier.hifi_dac \
+    audio_amplifier.lge \
     libaacwrapper \
     libaudio-resampler \
     libaudioroute \
@@ -263,7 +263,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.lge
+    android.hardware.light-service.lge
 
 # Live Display
 PRODUCT_PACKAGES += \
