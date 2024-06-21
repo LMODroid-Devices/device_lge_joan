@@ -132,7 +132,7 @@ PRODUCT_COPY_FILES += \
 
 # Configstore
 PRODUCT_PACKAGES += \
-    android.hardware.configstore@1.1-service
+    disable_configstore
 
 # DAC
 PRODUCT_PACKAGES += \
@@ -210,9 +210,9 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service \
-	android.hardware.health@2.1.vendor
+    android.hardware.health@2.1-impl:64 \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -437,9 +437,6 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     $(DEVICE_PATH)/configs/sensors/sensor_def_common.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_common.conf \
     $(DEVICE_PATH)/configs/sensors/sensor_def_joan_global_com.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_variable.conf
-
-# Shipping API Level
-PRODUCT_SHIPPING_API_LEVEL := 25
 
 # Telephony
 PRODUCT_PACKAGES += \
