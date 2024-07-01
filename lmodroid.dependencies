@@ -1,17 +1,6 @@
 [
   {
-    "remote": "lineage",
-    "repository": "android_kernel_lge_msm8998",
-    "target_path": "kernel/lge/msm8998"
-  },
-  {
-    "remote": "lineage",
-    "repository": "android_hardware_lge",
-    "target_path": "hardware/lge"
-  },
-  {
-    "remote": "lineage",
-    "repository": "android_hardware_sony_timekeep",
-    "target_path": "hardware/sony/timekeep"
+    "repository": "LMODroid-Devices/device_lge_joan-common",
+    "target_path": "device/lge/joan-common"
   }
 ]
